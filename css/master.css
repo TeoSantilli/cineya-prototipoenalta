@@ -20,7 +20,7 @@ body{
     align-items: center;
     justify-content: space-between;
     height: 140px;
-    background-color: #322626;
+    background-color: rgba(50, 38, 38, 0.2);
     padding: 0 40px;
 }
 
