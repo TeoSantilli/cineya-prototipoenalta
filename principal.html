@@ -4,24 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineYa</title>
+    <!-- Estilo general de la pagina -->
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/principal.css">
     <script src="js/master.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
+
+<link rel="stylesheet" href="css/principal.css">
+<script src="js/atajo.js"></script>
+<script src="js/principal.js"></script>
 </head>
 <body class="container">
+   
     <header class="header">
         <a href="index.html" class="logo">
             <h2>Cine<span>Ya</span></h2>
         </a>
-        <nav class="nav">
-            <ul>
-                <li><a href="">Registrate</a></li>
-                <li><a href="">Iniciar Sesion</a></li>
-            </ul>
+
+        <nav>
+            <form action="resultado.html" method="GET">
+                <li id="buscador">
+                    <input type="text" name="query" placeholder="Buscar estrenos...">
+                </li>
+            </form>
         </nav>
     </header>
     
-    
+    <section class="banner">
+        <img src="img/Banner.png" alt="" width="100%">
+    </section> 
+
+    <section>
+        <div class="top-estrenos">
+
+        </div>
+    </section>
+
 </body>
 </html>
