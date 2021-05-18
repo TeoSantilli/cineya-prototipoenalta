@@ -1,9 +1,60 @@
-.header a{
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1C1919;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    background-color: rgba(50, 38, 38, 0.2);
+    padding: 0 40px;
+}
+.header h2{
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
+.logo{
+    color: #B12121;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo span{
+    font-weight: 600;
+}
+
+.nav ul{
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a{
+    color: white;
+}
+.nav a:hover{
+    opacity: 0.6;
+}
 .banner{
     margin-bottom: 40px;
+}
+
+.titulo{
+    color: white;
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
 }
 
 .top-estrenos {
