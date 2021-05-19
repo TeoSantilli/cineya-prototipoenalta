@@ -11,6 +11,17 @@
     <!-- JS -->
     <script src="JS/atajos.js"></script>
     <script src="JS/detail.js"></script>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/b34952758e.js" crossorigin="anonymous"></script>
+
     <!-- CSS estilo general  -->
      <!-- CSS estilo -->
      <link rel="stylesheet" href="css/detail.css">
@@ -22,15 +33,21 @@
 
 <body>
     <header class="header">
-        <a href="principal.html" class="logo">
+        <a style="text-decoration: none;" href="principal.html" class="logo">
             <h2>Cine<span>Ya</span></h2>
         </a>
-        <nav class="nav">
-            <ul>
-                <li><a href="cuenta.html">Registrate</a></li>
-                <li><a href="cuenta.html">Iniciar Sesion</a></li>
-            </ul>
-        </nav>
+        <button class="uk-button uk-button-default" type="button" style="border: none;"><i class="fas fa-user-alt" style="color: white; font-size: 30px ;"></i></button>
+            <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"> <h3>¡Bienvenido Pedro!</h3></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="index.html">Cerrar Sesion</a></li>
+                </ul>
+            </div>
     </header>
 
     <section class="resumenes">

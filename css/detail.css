@@ -20,13 +20,15 @@ body{
 }
 
 
-.logo h2{
+.header h2{
     color: #B12121;
     font-size: 32px;
     font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
-.logo h2 span{
+.header h2 span{
     font-weight: 600;
 }
 

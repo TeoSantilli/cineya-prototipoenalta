@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
       })
       .then(function(information) {
           console.log(information);
-          for (let index = 0; index < 12; index++) {
+          for (let index = 0; index < 20; index++) {
             const element = information.results[index];
             estrenos.innerHTML += `
         
