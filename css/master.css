@@ -11,9 +11,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    max-width: 1920px;  
-}
 
 .header{
     display: flex;
@@ -78,4 +75,36 @@ body{
     border: none;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+}
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    background-color: rgba(50, 38, 38, 0.2);
+    padding: 0 40px;
+}
+
+.logo h2{
+    color: #B12121;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo h2 span{
+    font-weight: 600;
+}
+.redesSociales{
+    display: flex;
+    gap: 15px;
+}
+.redesSociales a{
+    color: grey;
+}
+.centroF a{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
 }

@@ -9,6 +9,7 @@
     <script src="js/master.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
 
@@ -25,14 +26,20 @@
    
     <header class="header">
         <h2 class="logo">Cine<span>Ya</span></h2>
+        <div class="uk-margin">
+            <form class="uk-search uk-search-default">
+                <span uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Search">
+            </form>
+        </div>
         <button class="uk-button uk-button-default" type="button" style="border: none;"><i class="fas fa-user-alt" style="color: white; font-size: 30px ;"></i></button>
             <div uk-dropdown>
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"> <h3>¡Bienvenido Pedro!</h3></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li class="uk-nav-header">Perfil</li>
+                    <li><a href="#">Cuenta</a></li>
+                    <li><a href="#">Mis Tickets</a></li>
                     <li class="uk-nav-divider"></li>
                     <li><a href="index.html">Cerrar Sesion</a></li>
                 </ul>
@@ -50,5 +57,41 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <a href="principal.html" class="logo">
+            <h2>Cine<span>Ya</span></h2>
+        </a>
+
+        <div class="centroF">
+            <a href="">
+                <h4>Centro de ayuda</h4>
+            </a>
+            <a href="">
+                <h4>Bases y condiciones</h4>
+            </a>
+            <a href="">
+                <h4>Soporte</h4>
+            </a>
+        </div>
+
+        <ul class="redesSociales">
+            <a href="">
+                <li>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </li>
+            </a>
+            
+        </ul>
+    </footer>
 </body>
 </html>
