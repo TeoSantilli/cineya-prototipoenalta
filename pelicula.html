@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineYa</title>
-    <link rel="stylesheet" href="css/compraT.css">
-    <script src="js/compraT.js"></script>
+
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
 
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
 
+    <script src="js/pelicula.js"></script>
     <script src="https://kit.fontawesome.com/b34952758e.js" crossorigin="anonymous"></script>
 
-    <script src="js/atajo.js"></script>
-    <script src="js/principal.js"></script>
+
+    <link rel="stylesheet" href="css/pelicula.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
-        <a href="principal.html" style="text-decoration: none;" class="logo">
+        <a style="text-decoration: none;" href="principal.html" class="logo">
             <h2>Cine<span>Ya</span></h2>
         </a>
         <div class="uk-margin">
@@ -32,6 +34,7 @@
             </form>
         </div>
         <button class="uk-button uk-button-default" type="button" style="border: none;"><i class="fas fa-user-alt" style="color: white; font-size: 30px ;"></i></button>
+        
             <div uk-dropdown>
                 <ul class="uk-nav uk-dropdown-nav">
                     <li class="uk-active"> <h3>¡Bienvenido Pedro!</h3></li>
@@ -47,54 +50,22 @@
 
     <section class="container">
         <div class="pelicula">
-            <div class="imgP">
 
-            </div>
-            <div class="info">
-                <h2 class="titulo"></h2>
-                <h3>Precio: $2000</h3>
-                <h3>Total a Pagar: $2000</h3>
-            </div>  
         </div>
-        <div class="form">
-            <form>
-                <fieldset class="uk-fieldset">
-            
-                    <legend class="uk-legend">Metodo de Pago</legend>
-            
-                    <div class="uk-margin">
-                        <select class="uk-select">
-                            <option>Seleccione metodo de Pago</option>
-                            <option>Credito</option>
-                            <option>Debito</option>
-                            <option>Efectivo (proximamente)</option>
-                        </select>
-                    </div>
-                    <div class="uk-margin">
-                        <input class="uk-input" type="number" placeholder="Numero de Tarjeta">
-                    </div>
-                    <div class="uk-margin">
-                        <input class="uk-input" type="number" placeholder="Codigo de Seguridad">
-                    </div>
-                    <div class="uk-margin">
-                        <h5 style="color: white;">Fecha de Vencimiento</h5>
-                        <input class="uk-input" type="month" placeholder="Fecha de Vencimiento">
-                    </div>
-                </fieldset>
-            </form>
-            <div class="botones">
-                <a href="pelicula.html">
-                    <button class='boton' type='submit' name='button' class='botonFavs'>Comprar tus tickets</button>
-                </a>
-                
-                <a href='https://www.pedidosya.com.ar/'>
-                    <button class='boton' type='submit' name='button' class='botonFavs'>Comprar Pochoclos</button> 
-                </a>
-            </div>
-        </div>
+        
     </section>
+    <div class="container2">
+        <a href="visualizacion.html">
+            <button class='boton' type='submit' name='button' class='botonFavs'>Terminar periodo de visualizacion</button>
+        </a>
+    </div>
+
+
+
+
+
     <footer class="footer">
-        <a href="principal.html" style="text-decoration: none;" class="logo">
+        <a href="principal.html" class="logo">
             <h2>Cine<span>Ya</span></h2>
         </a>
 

@@ -2,6 +2,7 @@ window.addEventListener('load', function(){
     let apiKey = '7bdc01d41b64d4396399e9ee70b4980b';
     let imgP = document.querySelector('.imgP')
     let titulo = document.querySelector('.titulo')
+    let botones = document.querySelector('.botones')
 
     let detalle = location.search
     let detalleObj = new URLSearchParams(detalle)
@@ -16,6 +17,12 @@ window.addEventListener('load', function(){
         console.log(infoP);
         imgP.innerHTML = `<img src="https://image.tmdb.org/t/p/w500${infoP.poster_path}">`
         titulo.innerHTML = `${infoP.title}`
+        botones.innerHTML = `<a href="pelicula.html?id=${id}">
+                                <button class='boton' type='submit' name='button' class='botonFavs'>Comprar tus tickets</button>
+                            </a>
+                            <a href='https://www.pedidosya.com.ar/'>
+                                <button class='boton' type='submit' name='button' class='botonFavs'>Comprar Pochoclos</button> 
+                            </a>`
     })
 
 
