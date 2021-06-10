@@ -25,7 +25,36 @@ window.addEventListener('load',function(){
 
 
 
+    var recuperoStorage = localStorage.getItem('favoritos')
 
+  if (recuperoStorage == null){
+    favoritos = [];
+  }
+  else{
+    favoritos = JSON.parse(recuperoStorage);
+  }
+
+  var boton = document.querySelector("#botonFavs")
+
+  if(favoritos.includes(id)){
+    boton.innerHTML = 'Terminar periodo de visualizacion!'
+  }
+
+  boton.addEventListener('click' , function(){
+
+    if(favoritos.includes(id)==true){
+        var index = favoritos.indexOf(id)
+        favoritos.splice(index, 1)
+    }
+    else{
+        favoritos.push(id)
+        boton.innerHTML ="Terminar periodo de visualizacion!"
+    }
+
+    let infoParaStorage = JSON.stringify(favoritos)
+    localStorage.setItem("favoritos", infoParaStorage)
+    console.log(localStorage); 
+  })
 
 
 
