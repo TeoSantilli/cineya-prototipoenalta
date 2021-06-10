@@ -35,8 +35,7 @@ window.addEventListener('load', function(){
     imgImg.innerHTML = ` 
   <img src="https://image.tmdb.org/t/p/w500${img}">
   <br>
-  <a href='compraT.html?id=${id}'><button class='boton' type='submit' name='button' class='botonFavs'>Comprar tus tickets</button> </a>
-  <a href='https://www.pedidosya.com.ar/'><button class='boton' type='submit' name='button' class='botonFavs'>Comprar Pochoclos</button> </a> 
+  <a href='compraT.html?id=${id}'><button class='boton' type='submit' name='button' class='botonFavs'>Comprar tus tickets</button> </a> 
   ` 
   calificacion.innerHTML = `${voteAverage}`
   titulo.innerHTML = `${title}`
